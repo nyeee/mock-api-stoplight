@@ -1,0 +1,39 @@
+{
+  "/todos/{id}": {
+    "get": {
+      "summary": "List Todos",
+      "responses": {
+        "200": {
+          "description": "Returns a list of Todos",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Todos"
+                }
+              },
+              "examples": {
+                "List of Todos": {
+                  "$ref": "#/components/examples/multiple-todos"
+                }
+              }
+            }
+          }
+        },
+        "403": {
+          "$ref": "#/components/responses/Unauthorized"
+        },
+        "404": {
+          "$ref": "#/components/responses/NotFound"
+        },
+        "operationId": "get-todos",
+        "description": "Returns a list of Todos",
+        "parameters": {
+          "$ref": "#/components/parameters/limit"
+        },
+        "security": []
+      }
+    }
+  }
+}
