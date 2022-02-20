@@ -11,7 +11,7 @@ function findSync(startPath) {
     });
   }
   finder(startPath);
-  console.log(result)
+  console.log("文件名======", result);
   return result;
 }
 

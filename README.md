@@ -3,8 +3,11 @@ http-server, stoplight
 
 ## use
 > npm i -g node
+
 > npm i -g http-server
+
 > http-server -c-1
+
 
 ### set api
 1. index.html -->files
