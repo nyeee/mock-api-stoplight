@@ -10,7 +10,7 @@ http-server, stoplight
 
 
 ### set api
-1. index.html -->files
+1. setData.js --> files, path
 2. "menu" file
 
 ## link

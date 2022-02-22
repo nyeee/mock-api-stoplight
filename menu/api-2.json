@@ -1,7 +1,7 @@
 {
   "/todos/{id}": {
     "get": {
-      "summary": "List Todos",
+      "summary": "List Todos -2",
       "responses": {
         "200": {
           "description": "Returns a list of Todos",
@@ -27,11 +27,8 @@
         "404": {
           "$ref": "#/components/responses/NotFound"
         },
-        "operationId": "get-todos",
+        "operationId": "get-todos-2",
         "description": "Returns a list of Todos",
-        "parameters": {
-          "$ref": "#/components/parameters/limit"
-        },
         "security": []
       }
     }
